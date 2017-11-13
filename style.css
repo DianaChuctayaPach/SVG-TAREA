@@ -1,0 +1,55 @@
+body{
+    text-align: center;
+}
+@keyframes offset{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill-it{
+    100%{
+        fill: #6fbc6d;
+    }
+}
+/*---------------------------------
+            SVG Styles
+---------------------------------*/
+svg{
+    display: block;
+    margin: 2em auto 0;
+}
+.arbol{
+    stroke: #6fbc6d;
+    stroke-width: 5;
+    stroke-dasharray: 2005; /*se puede obtener el valor con js*/
+    stroke-dashoffset: 2000;
+    animation: offset 4s linear forwards, fill-it  .7s 3s forwards;
+}
+@keyframes offset-star{
+    100%{
+        stroke-dashoffset: 10;
+    }
+}
+@keyframes fill-it-star{
+    100%{
+        fill:#cab91c;
+    }
+}
+/*---------------------------------
+            SVG Styles
+---------------------------------*/
+svg{
+    display: block;
+    margin: 2em auto 0;
+}
+.estrella{
+    stroke:#cab91c;
+    fill: none;
+    stroke-width: 5;
+    stroke-dasharray: 2005; /*se puede obtener el valor con js*/
+    stroke-dashoffset: 2000;
+    animation: offset-star 20s linear forwards, fill-it-star  .8s 4s forwards;
+}
+#starsvg{
+    margin-left: 490px;
+}
